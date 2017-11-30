@@ -4,16 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CAB9C179-0F11-4016-B39C-7186A1CC4C38}</ProjectGuid>
+    <ProjectGuid>{C757F1BE-2657-4750-8A0C-49284C39BEBB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Eml.PipelineFramework.Accounting</RootNamespace>
-    <AssemblyName>Eml.PipelineFramework.Accounting</AssemblyName>
+    <RootNamespace>Eml.PipelineFramework.Tests.Common</RootNamespace>
+    <AssemblyName>Eml.PipelineFramework.Tests.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,31 +23,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-Net462|AnyCPU'">
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
-    <OutputPath>bin\Release-Net462\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <Optimize>true</Optimize>
-    <DebugType>pdbonly</DebugType>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <ErrorReport>prompt</ErrorReport>
-    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug-Net462|AnyCPU'">
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
-    <OutputPath>bin\Debug-Net462\</OutputPath>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -66,21 +45,32 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccountingFakePipelineContext.cs" />
-    <Compile Include="AccountingPipeline.cs" />
-    <Compile Include="AccountingPipelineContext.cs" />
+    <Compile Include="FakePipelineContracts\IFakeJournalModule.cs" />
+    <Compile Include="FakePipelineContracts\IFakeMissingModuleBase.cs" />
+    <Compile Include="FakePipelineContracts\IFakeModule.cs" />
+    <Compile Include="FakePipelineContracts\IFakeModuleBase.cs" />
+    <Compile Include="FakePipelineContracts\IFakePipeline.cs" />
+    <Compile Include="FakePipelineContracts\IFakePipelineContext.cs" />
+    <Compile Include="FakePipelineContracts\IFakeValidateAccountModule.cs" />
+    <Compile Include="FakePipeline\FakeModule.cs" />
+    <Compile Include="FakePipeline\FakeModuleBase.cs" />
+    <Compile Include="FakePipeline\FakePipeline.cs" />
+    <Compile Include="FakePipeline\FakePipelineContext.cs" />
+    <Compile Include="FakePipeline\FakePipelineNoModuleContext.cs" />
+    <Compile Include="Modules2\ValidateAccount3Module.cs" />
+    <Compile Include="Modules\ValidateAccount1Module.cs" />
+    <Compile Include="Modules\ValidateAccount2Module.cs" />
+    <Compile Include="Modules\ValidateAccountFakeModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config">
-      <SubType>Designer</SubType>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Eml.PipelineFramework.Contracts\Eml.PipelineFramework.Contracts.csproj">
       <Project>{7f9e72af-9002-4fe6-832f-370858f7707b}</Project>
       <Name>Eml.PipelineFramework.Contracts</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

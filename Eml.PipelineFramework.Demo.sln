@@ -1,15 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+VisualStudioVersion = 15.0.27004.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7A3DB4BF-31ED-43EF-A6DA-98DA6EB42A99}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eml.PipelineFramework.Tests.Acceptance", "Tests\Eml.PipelineFramework.Tests.Acceptance\Eml.PipelineFramework.Tests.Acceptance.csproj", "{5C1FD2D7-CF46-45B8-A47D-2680ECCCC82A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eml.PipelineFramework", "Eml.PipelineFramework\Eml.PipelineFramework.csproj", "{03C431E3-2CA8-47DB-B95E-49D5E81D995F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eml.PipelineFramework.Tests.Unit", "Tests\Eml.PipelineFramework.Tests.Unit\Eml.PipelineFramework.Tests.Unit.csproj", "{64817CD3-9298-4BC6-AC8B-4C72232FCA95}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PipelineTestArtifacts", "PipelineTestArtifacts", "{4A253B42-840E-4FC9-AB70-E926BDD0A229}"
 EndProject
@@ -19,7 +13,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eml.PipelineFramework.Contr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eml.PipelineFramework.Modules", "Tests\PipelineTestArtifacts\Eml.PipelineFramework.Modules\Eml.PipelineFramework.Modules.csproj", "{73A542BE-AB61-43A7-814D-279AD8426511}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eml.PipelineFramework.Console", "Tests\PipelineTestArtifacts\Eml.PipelineFramework.Console\Eml.PipelineFramework.Console.csproj", "{9127E8C5-CA8C-44F6-8D2B-EE4CD19998F7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eml.PipelineFramework.Tests.Integration", "Tests\Eml.PipelineFramework.Tests.Integration\Eml.PipelineFramework.Tests.Integration.csproj", "{DA635B2A-BA74-406C-8FC6-826DB608D531}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eml.PipelineFramework.Tests.Common", "Tests\PipelineTestArtifacts\Eml.PipelineFramework.Tests.Common\Eml.PipelineFramework.Tests.Common.csproj", "{C757F1BE-2657-4750-8A0C-49284C39BEBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,30 +25,6 @@ Global
 		Release-Net462|Any CPU = Release-Net462|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5C1FD2D7-CF46-45B8-A47D-2680ECCCC82A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C1FD2D7-CF46-45B8-A47D-2680ECCCC82A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C1FD2D7-CF46-45B8-A47D-2680ECCCC82A}.Debug-Net462|Any CPU.ActiveCfg = Debug-Net462|Any CPU
-		{5C1FD2D7-CF46-45B8-A47D-2680ECCCC82A}.Debug-Net462|Any CPU.Build.0 = Debug-Net462|Any CPU
-		{5C1FD2D7-CF46-45B8-A47D-2680ECCCC82A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C1FD2D7-CF46-45B8-A47D-2680ECCCC82A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5C1FD2D7-CF46-45B8-A47D-2680ECCCC82A}.Release-Net462|Any CPU.ActiveCfg = Release-Net462|Any CPU
-		{5C1FD2D7-CF46-45B8-A47D-2680ECCCC82A}.Release-Net462|Any CPU.Build.0 = Release-Net462|Any CPU
-		{03C431E3-2CA8-47DB-B95E-49D5E81D995F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{03C431E3-2CA8-47DB-B95E-49D5E81D995F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{03C431E3-2CA8-47DB-B95E-49D5E81D995F}.Debug-Net462|Any CPU.ActiveCfg = Debug-Net462|Any CPU
-		{03C431E3-2CA8-47DB-B95E-49D5E81D995F}.Debug-Net462|Any CPU.Build.0 = Debug-Net462|Any CPU
-		{03C431E3-2CA8-47DB-B95E-49D5E81D995F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{03C431E3-2CA8-47DB-B95E-49D5E81D995F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{03C431E3-2CA8-47DB-B95E-49D5E81D995F}.Release-Net462|Any CPU.ActiveCfg = Release-Net462|Any CPU
-		{03C431E3-2CA8-47DB-B95E-49D5E81D995F}.Release-Net462|Any CPU.Build.0 = Release-Net462|Any CPU
-		{64817CD3-9298-4BC6-AC8B-4C72232FCA95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{64817CD3-9298-4BC6-AC8B-4C72232FCA95}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{64817CD3-9298-4BC6-AC8B-4C72232FCA95}.Debug-Net462|Any CPU.ActiveCfg = Debug-Net462|Any CPU
-		{64817CD3-9298-4BC6-AC8B-4C72232FCA95}.Debug-Net462|Any CPU.Build.0 = Debug-Net462|Any CPU
-		{64817CD3-9298-4BC6-AC8B-4C72232FCA95}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{64817CD3-9298-4BC6-AC8B-4C72232FCA95}.Release|Any CPU.Build.0 = Release|Any CPU
-		{64817CD3-9298-4BC6-AC8B-4C72232FCA95}.Release-Net462|Any CPU.ActiveCfg = Release-Net462|Any CPU
-		{64817CD3-9298-4BC6-AC8B-4C72232FCA95}.Release-Net462|Any CPU.Build.0 = Release-Net462|Any CPU
 		{CAB9C179-0F11-4016-B39C-7186A1CC4C38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CAB9C179-0F11-4016-B39C-7186A1CC4C38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAB9C179-0F11-4016-B39C-7186A1CC4C38}.Debug-Net462|Any CPU.ActiveCfg = Debug-Net462|Any CPU
@@ -77,26 +49,33 @@ Global
 		{73A542BE-AB61-43A7-814D-279AD8426511}.Release|Any CPU.Build.0 = Release|Any CPU
 		{73A542BE-AB61-43A7-814D-279AD8426511}.Release-Net462|Any CPU.ActiveCfg = Release-Net462|Any CPU
 		{73A542BE-AB61-43A7-814D-279AD8426511}.Release-Net462|Any CPU.Build.0 = Release-Net462|Any CPU
-		{9127E8C5-CA8C-44F6-8D2B-EE4CD19998F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9127E8C5-CA8C-44F6-8D2B-EE4CD19998F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9127E8C5-CA8C-44F6-8D2B-EE4CD19998F7}.Debug-Net462|Any CPU.ActiveCfg = Debug-Net462|Any CPU
-		{9127E8C5-CA8C-44F6-8D2B-EE4CD19998F7}.Debug-Net462|Any CPU.Build.0 = Debug-Net462|Any CPU
-		{9127E8C5-CA8C-44F6-8D2B-EE4CD19998F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9127E8C5-CA8C-44F6-8D2B-EE4CD19998F7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9127E8C5-CA8C-44F6-8D2B-EE4CD19998F7}.Release-Net462|Any CPU.ActiveCfg = Release-Net462|Any CPU
-		{9127E8C5-CA8C-44F6-8D2B-EE4CD19998F7}.Release-Net462|Any CPU.Build.0 = Release-Net462|Any CPU
+		{DA635B2A-BA74-406C-8FC6-826DB608D531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA635B2A-BA74-406C-8FC6-826DB608D531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA635B2A-BA74-406C-8FC6-826DB608D531}.Debug-Net462|Any CPU.ActiveCfg = Debug-Net462|Any CPU
+		{DA635B2A-BA74-406C-8FC6-826DB608D531}.Debug-Net462|Any CPU.Build.0 = Debug-Net462|Any CPU
+		{DA635B2A-BA74-406C-8FC6-826DB608D531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA635B2A-BA74-406C-8FC6-826DB608D531}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA635B2A-BA74-406C-8FC6-826DB608D531}.Release-Net462|Any CPU.ActiveCfg = Release-Net462|Any CPU
+		{DA635B2A-BA74-406C-8FC6-826DB608D531}.Release-Net462|Any CPU.Build.0 = Release-Net462|Any CPU
+		{C757F1BE-2657-4750-8A0C-49284C39BEBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C757F1BE-2657-4750-8A0C-49284C39BEBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C757F1BE-2657-4750-8A0C-49284C39BEBB}.Debug-Net462|Any CPU.ActiveCfg = Debug|Any CPU
+		{C757F1BE-2657-4750-8A0C-49284C39BEBB}.Debug-Net462|Any CPU.Build.0 = Debug|Any CPU
+		{C757F1BE-2657-4750-8A0C-49284C39BEBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C757F1BE-2657-4750-8A0C-49284C39BEBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C757F1BE-2657-4750-8A0C-49284C39BEBB}.Release-Net462|Any CPU.ActiveCfg = Release|Any CPU
+		{C757F1BE-2657-4750-8A0C-49284C39BEBB}.Release-Net462|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{5C1FD2D7-CF46-45B8-A47D-2680ECCCC82A} = {7A3DB4BF-31ED-43EF-A6DA-98DA6EB42A99}
-		{64817CD3-9298-4BC6-AC8B-4C72232FCA95} = {7A3DB4BF-31ED-43EF-A6DA-98DA6EB42A99}
 		{4A253B42-840E-4FC9-AB70-E926BDD0A229} = {7A3DB4BF-31ED-43EF-A6DA-98DA6EB42A99}
 		{CAB9C179-0F11-4016-B39C-7186A1CC4C38} = {4A253B42-840E-4FC9-AB70-E926BDD0A229}
 		{7F9E72AF-9002-4FE6-832F-370858F7707B} = {4A253B42-840E-4FC9-AB70-E926BDD0A229}
 		{73A542BE-AB61-43A7-814D-279AD8426511} = {4A253B42-840E-4FC9-AB70-E926BDD0A229}
-		{9127E8C5-CA8C-44F6-8D2B-EE4CD19998F7} = {4A253B42-840E-4FC9-AB70-E926BDD0A229}
+		{DA635B2A-BA74-406C-8FC6-826DB608D531} = {7A3DB4BF-31ED-43EF-A6DA-98DA6EB42A99}
+		{C757F1BE-2657-4750-8A0C-49284C39BEBB} = {4A253B42-840E-4FC9-AB70-E926BDD0A229}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {83E0023A-7857-4AB6-AB77-5FC846C1BEB7}

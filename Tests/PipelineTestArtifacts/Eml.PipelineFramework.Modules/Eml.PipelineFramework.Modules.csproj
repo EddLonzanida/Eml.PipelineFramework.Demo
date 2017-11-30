@@ -44,33 +44,26 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug-Net462|AnyCPU'">
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <OutputPath>bin\Debug-Net462\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Eml.PipelineFramework, Version=1.0.0.17, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Eml.PipelineFramework.1.0.0.17\lib\net452\Eml.PipelineFramework.dll</HintPath>
+    <Reference Include="Eml.ClassFactory.Contracts, Version=2.0.1.7, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Eml.ClassFactory.Contracts.2.0.1.7\lib\net452\Eml.ClassFactory.Contracts.dll</HintPath>
     </Reference>
-    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\NLog.4.4.12\lib\net45\NLog.dll</HintPath>
+    <Reference Include="Eml.Contracts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Eml.Contracts.2.0.1.28\lib\net452\Eml.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Eml.PipelineFramework, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Eml.PipelineFramework.2.0.0\lib\net452\Eml.PipelineFramework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
-  </ItemGroup>
-  <ItemGroup Condition="'$(Configuration)' == 'Debug' or '$(Configuration)' == 'Release'">
-    <Reference Include="Eml.ClassFactory.Contracts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Eml.ClassFactory.Contracts.1.0.0\lib\net452\Eml.ClassFactory.Contracts.dll</HintPath>
-    </Reference>
-    <Reference Include="Eml.Contracts, Version=1.0.0.19, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Eml.Contracts.1.0.0.19\lib\net452\Eml.Contracts.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup Condition="'$(Configuration)' == 'Debug-Net462' or '$(Configuration)' == 'Release-Net462'">
-    <Reference Include="Eml.ClassFactory.Contracts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Eml.ClassFactory.Contracts.1.0.0\lib\net462\Eml.ClassFactory.Contracts.dll</HintPath>
-    </Reference>
-    <Reference Include="Eml.Contracts, Version=1.0.0.19, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Eml.Contracts.1.0.0.19\lib\net462\Eml.Contracts.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
